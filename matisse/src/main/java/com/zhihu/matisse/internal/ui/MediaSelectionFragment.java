@@ -153,6 +153,10 @@ public class MediaSelectionFragment extends Fragment implements
         }
     }
 
+    public void destroyManagerLoader() {
+        mAlbumMediaCollection.onDestroy();
+    }
+
     public interface SelectionProvider {
         SelectedItemCollection provideSelectedItemCollection();
     }
